@@ -11,13 +11,12 @@ function thueThuNhapCaNhan() {
 
     document.getElementById("txtThue").innerHTML = "Họ và tên: " + hoTen + "<br> Thuế thu nhập cá nhân: " + thue.toLocaleString();
 }
-document.getElementById("btnThue").onclick = thueThuNhapCaNhan;
+    document.getElementById("btnThue").onclick = thueThuNhapCaNhan;
 
-function tinhThue(object) {
+    function tinhThue(object) {
     var thue = 0;
     if (object <= 60000000 && object >0){
         thue = 0.05 *object;
-      
     } else if(object > 60000000 && object <=120000000){
         thue = 0.1 * object;
     }else if(object > 120000000 && object <=210000000){
